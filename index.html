@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="ocy/web/css/peaktopic.css">
+		<script src="ocy/web/js/jquery-1.11.2.min.js" ></script>
+		<script>
+			$(document).ready(function () {
+				$('#topic-1st').mouseover(function(e){
+				e.stopPropagation();
+					$('#topic-1st-info').slideToggle();
+				});		
+				$(document).mouseout(function(){		
+					if($('#topic-1st-info').is(':visible')) {
+						$('#topic-1st-info').slideUp();
+					}			 
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="navbar-top">
+			<div id="navbar-top-left">
+				<div id="navbar-icon">
+					<h1>PeakTopic</h1>
+				</div>
+				<div id="navbar-menu">
+					<ul>
+						<li>
+							Topics
+						</li>
+						<li>
+							Galeries
+						</li>
+						<li>
+							Videos
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="navbar-top-right">
+				<div id="search">
+					<input placeholder="Search"></input>
+					<img src="OCY/web/img/png/ara.png" />
+				</div>
+				<div id="login">
+					<img src="OCY/web/img/png/login.png" />
+					<a>Login</a>
+				</div>
+				<div id="login-facebook">
+					<div id="fb-img">
+						f
+					</div>
+					<div id="fb">
+						Login to Facebook
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			<div id="peak-topic">
+				<div id="topic-1st-info">
+				</div>
+				<div id="topic-1st">
+				</div>
+				<div id="topic-2nd">
+				</div>
+				<div id="topic-3rd-4th">
+					<div id="topic-3rd">
+					</div>
+					<div id="topic-4th">
+					</div>
+				</div>
+			</div>
+			<div id="topics">
+				<div id="news">
+					<h2 class="topics-main-header">Topics</h2>
+					<div class="topics-news-headers">
+					</div>
+					<div class="topics-news-headers">
+					</div>
+					<div class="topics-news-headers">
+					</div>
+					<div class="topics-news-headers">
+					</div>
+				</div>
+				<div id="photos">
+					<h2 class="topics-main-header">Galeries</h2>
+					<div class="topics-photos-headers">
+					</div>
+					<div class="topics-photos-headers">
+					</div>
+					<div class="topics-photos-headers">
+					</div>
+					<div class="topics-photos-headers">
+					</div>
+				</div>
+				<div id="videos">
+					<h2 class="topics-main-header">Videos</h2>
+					<div class="topics-videos-headers">
+					</div>
+					<div class="topics-videos-headers">
+					</div>
+					<div class="topics-videos-headers">
+					</div>
+					<div class="topics-videos-headers">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
