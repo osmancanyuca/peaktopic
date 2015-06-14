@@ -1,7 +1,8 @@
 body {
 	margin:0;
+	font-family: verdana;
 }
-#navbar-top {
+#navbar-top-container {
 	width:100%;
 	height:55px;
 	position:fixed;
@@ -10,113 +11,159 @@ body {
 	background-color:#ffffff;
 	z-index:5;
 }
-#search img {
-	width:1%;
-	height:34%;
-	position:absolute;
-	right:36.5%;
-	top:38%;
-	cursor:pointer;
+#main-container {
+	width:100%;
+	background-color:#ffffff;
 }
-#navbar-top-right input {
-	height:50%;
-	width:83%;
-	border-radius:10%;
-	padding:2%;
+#navbar-top {
+	width:1100px;
+	height: 55px;
+	margin:0 auto;
 }
 #navbar-top-left {
-	width:30%;
+	width:45%;
 	height:100%;
-	margin-left:21%;
 	float:left;
-}
-#navbar-icon {
-	float:left;
-	margin-top:-2.1%;
-	cursor:pointer;
-}
-#navbar-menu {
-	float:left;
-	font-size:115%;
-}
-#navbar-menu ul {
-	width:200%;
-}
-#navbar-menu ul li {
-	display:inline-block;
-	margin-left:10%;
-	cursor:pointer;
-}
-#navbar-menu ul li:hover {
-	color:#cccccc;
 }
 #navbar-top-right {
-	width:30%;
+	width:55%;
 	height:100%;
-	float:left;
-	margin-top:0.9%;
-	margin-left:7.4%;
+	float:right;
+    margin-top: 15px;	
+}
+#navbar-top-right span{
+	width:10px;
+	float:right;
+	margin: 0 10px;
+	font-size: 22px;
+	color: #9A9494;
 }
 #search {
-	float:left;
-	height:100%;
-	width:22%;
+	float:right;
 }
-#login {
+
+#search input {
+    padding:7px;
+    background-image: url('../img/search.png');
+    background-repeat: no-repeat;
+    background-position: right;
+	border: 1px solid #979696;
+	
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+	outline:none;
+	
+	-webkit-transition:all .2s ease;
+	-khtml-transition:all .2s ease;
+	-moz-transition:all .2s ease;
+	-ms-transition:all .2s ease;
+	-o-transition:all .2s ease;
+	transition:all .2s ease;
+	-moz-transition:all .2s ease;
+	-webkit-transition:all .2s ease;
+	-ms-transition:all .2s ease;
+	-o-transition:all .2s ease;	
+	
+}
+
+#navbar-icon {
 	float:left;
-	height:100%;
-	width:15%;
 	cursor:pointer;
+	padding-top: 7px;	
+}
+
+#navbar-icon h1{
+	margin: 0px;
+}
+
+#navbar-menu {
+	float:left;
+	font-size:18px;
+}
+#navbar-menu ul {
+
+}
+#navbar-menu ul li {
+	display: inline-block;
+	margin-left: 10px;
+	cursor: pointer;
+	color:#424242;
+}
+#navbar-menu ul li:hover {
+	color:#000;
+}
+
+
+#login {
+	float:right;
+	cursor:pointer;
+	margin-left:15px;
+	padding:5px;
+	color:#424242;
 }
 #login:hover {
-	color:#cccccc;
+	color:#000;
 }
-#login img {
-	float:left;
-	height:45%;
-	width:24%;
+#lg-img {
+	float:left;	
+	padding: 0 5px;
+    background-image: url('../img/login.png');
+    background-repeat: no-repeat;
+    background-position: left;
+	width: 16px;
 }
-#login a {
-	float:left;
-	font-size:120%;
-	margin-left:5%;
-	margin-top:1%;
+#lg {
+	float:left;		
+	text-align: left;
+	margin-left: 5px;	
+	font-size:18px;
 }
+
 #login-facebook {
-	float:left;
-	height:54%;
-	width:30%;
+	float:right;
+	width:100px;
 	border-radius:6%;
 	background-color:#4973c4;
 	cursor:pointer;
-	margin-top:-0.5%;
+	color:#ffffff;
+	font-size:18px;
+	padding:5px;
 }
 #login-facebook:hover {
 	background-color:#466ba0;
 }
 #fb-img {
-	float:left;
-	width:15%;
-	color:#ffffff;
+	float:left;	
 	border-right:1px solid #32569c;
-	font-size:158%;
 	text-align:center;
+	font-weight: bold;
+	padding: 0px 5px;
 }
 #fb {
-	float:right;
-	width:79%;
-	color:#ffffff;
-	margin-top:3%;
+	float:left;
+	text-align: left;
+	padding-left:5px;
 }
 #main {
-	top:50px;
-	left:21%;
+	top:55px;
 	position:relative;
-	width:62%;
-	height:5000px;
+	width:1100px;
+	margin:0 auto;
 	z-index:4;
 }
-#peak-topic {
+
+main h2{
+}
+
+#head-topics {
 	width:100%;
 	height:330px;
 }
@@ -126,32 +173,24 @@ body {
 	border:2px solid #cccccc;
 	margin:15px 5px 5px 0px;
 	float:left;
-	position:relative;
 }
-#topic-1st-info {
-	background-color:black;
-	height:314px;
-	width:464px;
-	display:none;
-	position:absolute;
-	top:15px;
-	opacity:0.5;
-}
+
 #topic-2nd {
-	width:25.5%;
+	width:29%;
 	height:310px;
 	border:2px solid #cccccc;
 	margin:15px 5px 5px 5px;
 	float:left;
 	position:relative;
 }
+
 #topic-3rd-4th {
-	width:25.5%;
+	width:29%;
 	height:310px;
 	margin:15px 5px 5px 5px;
-	float:left;
-	position:relative;
+	float:right;
 }
+
 #topic-3rd {
 	width:100%;
 	height:48%;
@@ -170,6 +209,7 @@ body {
 	width:100%;
 	height:1000px;
 }
+
 #news {
 	height:100%;
 	width:43%;
@@ -217,4 +257,8 @@ body {
 	height:160px;
 	border:1px solid #cccccc;
 	margin-bottom:10px;
+}
+#main h2{
+	font-size:18px;
+	color:#000;
 }
