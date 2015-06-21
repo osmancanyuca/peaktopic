@@ -12,8 +12,10 @@
 		<title>PeakTopic</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="js/jquery-1.11.2.min.js" ></script>
-		<script>
+		<script src="js/index.js" ></script>
+		<script>		
 			$(document).ready(function () {
+				
 				$('#topic-1st').mouseover(function(e){
 				e.stopPropagation();
 					$('#topic-1st-info').slideToggle();
@@ -58,12 +60,31 @@
 					</div>					
 				</div>				
 			</nav>
-
 		</div>
+		<div id="feedback">FEEDBACK</div>
+		<a href="#">
+			<div id="go-to-top">
+				<img src="./img/right-arrow.png" />
+			</div>
+		</a>
 		<div id="main-container">
 			<main id="main">
 				<section id="head-topics">
 					<div id="topic-1st">
+						<a href="/haber/erdogan-dan-hukumet-kurma-gorevi-aciklamasi-531081">
+							<img src="http://img-s2.onedio.com/id-558584a330da0eb46e0ba90f/rev-0/w-460/h-290/f-jpg/s-9372ce72c8db33b9bff3ec865eb57f433d83e165.jpg">
+								<div class="content"><div class="wrapper">
+									<h1>Erdoğan'dan ‘Hükümet Kurma Görevi’ Açıklaması</h1>
+									<aside>
+										<p>Cumhurbaşkanı Recep Tayyip Erdoğan,&nbsp;Başbakan Ahmet Davutoğlu'nu AKP Genel Başkanı olarak Meclis...</p>
+										<div class="stats">
+											<span class="facebook-head-topics"><i class="fa fa-facebook"></i>1</span>
+											<span class="twitter-head-topics"><i class="fa fa-twitter"></i>8</span>
+										</div>
+									</aside>
+								</div>
+							</div>
+						</a>					
 					</div>
 					<div id="topic-2nd">
 					</div>
@@ -201,9 +222,27 @@
 								</a>
 							</header>
 						</article>
+						<footer class="footer-right">
+							<a>ABOUT US</a>
+							<a>FEEDBACK</a>
+							<a>ADVERSTING</a>
+							<a>USER AGREEMENT</a>
+							<a>CONTACT</a>
+							<img src="./img/fb.png" />
+							<img src="./img/twitter.png" />
+							<img src="./img/google+.png" />
+							<img src="./img/instagram.png" />
+							<img src="./img/youtube.png" />
+							<img src="./img/pinterest.png" />
+							<img src="./img/rss.png" />
+							<div><b>peaktopic.com </b>copyright &copy; 2015</div>
+						</footer>
 					</div>
 				</section> <!-- end topics -->
 			</main> <!-- end main -->
 		</div> <!-- end main container -->
 	</body>
+	<script>
+	var footer_initial_pos = $('.footer-right').offset().top;
+	</script>
 </html>
