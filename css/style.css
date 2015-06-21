@@ -209,32 +209,26 @@ main h2{
 	height:330px;
 	position: relative;
 }
+#head-topics h1 {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
 #topic-1st {
-	top: 0;
-	left: 0;
-	width:39%;
-	height:310px;
-	border:2px solid #cccccc;
-	margin:15px 5px 5px 0px;
+	width:430px;
+	height:295px;
 	float:left;
+	margin-top:15px;
 }
 
 #topic-1st  img{
   position: absolute;
-  top: 15px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 310px;
+  height: 295px;
   width: 430px;  
 }
 
-#head-topics .content{
+#topic-1st .content{
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height:295px;
   background-color: rgba(0,0,0,0);
   background-image: url('../img/content-bg.png');
   -webkit-transition: .2s linear all;
@@ -293,36 +287,111 @@ main h2{
 }
 #head-topics span {
 	color:#e4e4e4;
+	display: inline-block;
+    font-family: "PT Sans","Open Sans","Helvetica Neue",sans-serif;
+    font-size: 12px;
+    margin-right: 10px;
 }
+
 #topic-2nd {
-	width:29%;
-	height:310px;
-	border:2px solid #cccccc;
-	margin:15px 5px 5px 5px;
+	width:344px;
+	height:295px;
 	float:left;
-	position:relative;
+	margin-top:15px;
+	margin-left:6px;
 }
-
+#topic-2nd .content{
+  position: absolute;
+  height:295px;
+  background-color: rgba(0,0,0,0);
+  background-image: url('../img/content-bg.png');
+  -webkit-transition: .2s linear all;
+  -khtml-transition: .2s linear all;
+  -moz-transition: .2s linear all;
+  -ms-transition: .2s linear all;
+  -o-transition: .2s linear all;
+  transition: .2s linear all;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  width:344px;
+}
+#topic-2nd:hover .wrapper aside{
+  max-height: 100%;
+  opacity: 1;
+}
+#topic-2nd  img{
+  position: absolute;
+  height: 295px;
+  width: 344px;  
+}
 #topic-3rd-4th {
-	width:29%;
-	height:310px;
-	margin:15px 5px 5px 5px;
+	width:312px;
+	height:295px;
 	float:right;
+	margin-top:15px;
+	margin-left:6px;
 }
-
+#topic-3rd-4th .wrapper h1 {
+	font-size:15px;
+}
 #topic-3rd {
-	width:100%;
-	height:48%;
-	border:2px solid #cccccc;
+	width:312px;
+	height:144px;
 	position:relative;
-	margin-bottom:2%;
+	margin-bottom:7px;
+}
+#topic-3rd .content{
+  position: absolute;
+  height:144px;
+  background-color: rgba(0,0,0,0);
+  background-image: url('../img/content-bg.png');
+  -webkit-transition: .2s linear all;
+  -khtml-transition: .2s linear all;
+  -moz-transition: .2s linear all;
+  -ms-transition: .2s linear all;
+  -o-transition: .2s linear all;
+  transition: .2s linear all;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  width:312px;
+}
+#topic-3rd:hover .wrapper aside{
+  max-height: 100%;
+  opacity: 1;
+}
+#topic-3rd  img{
+  position: absolute;
+  height: 144px;
+  width: 312px;  
 }
 #topic-4th {
-	width:100%;
-	height:48%;
-	border:2px solid #cccccc;
+	width:312px;
+	height:144px;
 	position:relative;
-	margin-top:2.64%;
+}
+#topic-4th .content{
+  position: absolute;
+  height:144px;
+  background-color: rgba(0,0,0,0);
+  background-image: url('../img/content-bg.png');
+  -webkit-transition: .2s linear all;
+  -khtml-transition: .2s linear all;
+  -moz-transition: .2s linear all;
+  -ms-transition: .2s linear all;
+  -o-transition: .2s linear all;
+  transition: .2s linear all;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  width:312px;
+}
+#topic-4th:hover .wrapper aside{
+  max-height: 100%;
+  opacity: 1;
+}
+#topic-4th  img{
+  position: absolute;
+  height: 144px;
+  width: 312px;  
 }
 #topics {
 	width:100%;
@@ -389,6 +458,17 @@ main h2{
   font-family: "PT Sans","Open Sans","Helvetica Neue",sans-serif;
   font-size: 12px;
 }
+.facebook-head-topics {
+	background-image:url(../img/facebook2.png);
+	background-size:14px;
+	width:30px;
+	background-repeat:no-repeat;
+	text-align:right;
+	cursor:pointer;
+}
+.facebook-head-topics:hover {
+	background-image:url(../img/facebook3.png);
+}
 .facebook {
 	background-image:url(../img/fac.png);
 	background-size:14px;
@@ -399,6 +479,17 @@ main h2{
 }
 .facebook:hover {
 	background-image:url(../img/fac-hover.png);
+}
+.twitter-head-topics {
+	background-image:url(../img/twitter2.png);
+	background-size:14px;
+	width:30px;
+	background-repeat:no-repeat;
+	text-align:right;
+	cursor:pointer;
+}
+.twitter-head-topics:hover {
+	background-image:url(../img/twitter3.png);
 }
 .twitter {
 	background-image:url(../img/twi.png);
