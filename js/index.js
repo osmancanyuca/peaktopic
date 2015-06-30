@@ -16,9 +16,9 @@ $(window).on('scroll', function() {
 $(window).scroll(function (event) {
 	var scroll = $(window).scrollTop();
 	console.log(scroll);
-	if (scroll>400){
+	if (scroll>500){
 		$("#go-to-top").show();	
-	} else if (scroll<=400){
+	} else if (scroll<=500){
 		$("#go-to-top").hide();			
 	}
 });

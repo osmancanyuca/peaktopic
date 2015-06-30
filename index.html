@@ -4,6 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="cache-control" content="no-cache" />
 		<meta http-equiv="pragma" content="no-cache" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
 		<meta name="author" content="" />
@@ -13,20 +14,6 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="js/jquery-1.11.2.min.js" ></script>
 		<script src="js/index.js" ></script>
-		<script>		
-			$(document).ready(function () {
-				
-				$('#topic-1st').mouseover(function(e){
-				e.stopPropagation();
-					$('#topic-1st-info').slideToggle();
-				});		
-				$(document).mouseout(function(){		
-					if($('#topic-1st-info').is(':visible')) {
-						$('#topic-1st-info').slideUp();
-					}			 
-				});
-			});
-		</script>
 	</head>
 	<body>
 		<div id="navbar-top-container">
@@ -279,7 +266,6 @@
 							<img src="./img/rss.png" />
 							<div><b>peaktopic.com </b>copyright &copy; 2015</div>
 						</footer>
-					</div>
 				</section> <!-- end topics -->
 			</main> <!-- end main -->
 		</div> <!-- end main container -->
