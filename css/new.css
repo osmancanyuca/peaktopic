@@ -253,6 +253,15 @@ a {
 .social ul li img {
 	width:60px;
 	cursor:pointer;
+	opacity:0.8;
+	-webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+}
+.social ul li img:hover {
+	opacity:1;
 }
 .social.fixed {
     position: fixed;
@@ -338,6 +347,7 @@ a {
 	font-size:11px;
 	color:#5060D9;
 	margin-bottom:20px;
+	cursor:pointer;
 }
 #content #author #name-info #author-info {
 	font-size:11px;
@@ -593,6 +603,16 @@ a {
     list-style-type: none;
     padding-left: 21px;
 	color:#424242;
+	cursor:pointer;
+	-webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+	background-position-y: 6px;
+}
+#topic-headers #headers ul li:hover {
+	color:#5060D9;
 }
 #main-right {
 	width:388px;
