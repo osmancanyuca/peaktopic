@@ -1,3 +1,4 @@
+$(document).ready(function() {	
 $(window).on('scroll', function() {
     var scrolled = $(this).scrollTop();
 	var active = $('.social').offset().top;
@@ -22,3 +23,34 @@ $(window).scroll(function (event) {
 		$("#go-to-top").hide();			
 	}
 });
+
+		$('#login').click(function(e){
+				e.stopPropagation();
+				$('#login-window').toggle();
+				$('#opacity').toggle();
+				$('#register').toggle();
+				$("#opacity").css({"opacity":"0.8"});
+			});		
+		
+		$(document).click(function(){		
+			if($('#login-window').is(':visible')) {
+				$('#login-window').toggle();
+				$('#opacity').toggle();
+				$('#register').toggle();
+			}	
+
+		});	
+		
+		$('#login-window-x').click(function(){		
+			if($('#login-window').is(':visible')) {
+				$('#login-window').toggle();
+				$('#opacity').toggle();
+				$('#register').toggle();
+			}	
+
+		});	
+		
+		$('#login-window').click(function(e){
+			e.stopPropagation();
+		});
+});	
